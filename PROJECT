@@ -1,0 +1,23 @@
+domain: knela.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: gkrator
+repo: gkrator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: knela.dev
+  kind: GoogleKubernetesEngine
+  path: gkrator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: knela.dev
+  kind: NodePool
+  path: gkrator/api/v1alpha1
+  version: v1alpha1
+version: "3"

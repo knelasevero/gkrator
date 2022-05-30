@@ -1,0 +1,6 @@
+apiVersion: knela.dev/v1alpha1
+kind: GoogleKubernetesEngine
+metadata:
+  name: googlekubernetesengine-sample
+spec:
+  # TODO(user): Add fields here
