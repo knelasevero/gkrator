@@ -18,7 +18,7 @@ package v1alpha1
 
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	gkratormeta "github.com/knelasevero/gkrator/api/meta/v1"
+	v1 "k8s.io/api/core/v1"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
@@ -46,7 +46,7 @@ type Auth struct {
 type GCPAuthSecretRef struct {
 	// The SecretAccessKey is used for authentication
 	// +optional
-	SecretAccessKey gkratormeta.SecretKeySelector `json:"secretAccessKeySecretRef,omitempty"`
+	SecretAccessKey v1.SecretKeySelector `json:"secretAccessKeySecretRef,omitempty"`
 }
 
 // GoogleKubernetesEngineStatus defines the observed state of GoogleKubernetesEngine
